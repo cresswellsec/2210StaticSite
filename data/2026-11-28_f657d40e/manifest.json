@@ -1,0 +1,131 @@
+{
+  "built_at": "2026-11-28T05:08:04+00:00",
+  "bundle_id": "2026-11-28_f657d40e",
+  "chunking": {
+    "boilerplate_removed": true,
+    "header_fields": [
+      "title",
+      "agency",
+      "location",
+      "grade"
+    ],
+    "max_words": 180,
+    "sections": [
+      "summary",
+      "duties",
+      "qualifications"
+    ],
+    "strategy": "per_section"
+  },
+  "counts": {
+    "chunks": 2028,
+    "postings": 360
+  },
+  "embedding": {
+    "dim": 384,
+    "doc_prefix": "",
+    "dtype": "int8",
+    "max_tokens": 512,
+    "model": "Xenova/bge-small-en-v1.5",
+    "normalized": true,
+    "onnx_file": "onnx/model.onnx",
+    "pooling": "cls",
+    "quantization": "per_row_symmetric",
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "runtime": "onnx"
+  },
+  "files": {
+    "BUNDLE.md": {
+      "bytes": 16791,
+      "sha256": "9adc2bdf88117edb109262d64be228cf8441ba104f07b4dc3a50a5ebef5c8d54"
+    },
+    "CONTRACT.md": {
+      "bytes": 3926,
+      "sha256": "c26fa37c652ba3500fb419d154ce75d0f44804bd2021f52eef9b96f705d34973"
+    },
+    "chunks.jsonl": {
+      "bytes": 2361919,
+      "sha256": "5c7cefb38b82d3eb31e8b1e3ce1ef0476466cdec3bd005b7fde97b70da53347d"
+    },
+    "conformance.json": {
+      "bytes": 1370,
+      "sha256": "6e892e899bc18565d92bf1e66330d296a17daabee070743c22bb1e47b1d2f0e2"
+    },
+    "facets.json": {
+      "bytes": 10628,
+      "sha256": "6a0f1295004e7a3aa0f510220cf5226c844ded890b780eb5251c1884f6e817cf"
+    },
+    "index.jsonl": {
+      "bytes": 209749,
+      "sha256": "6c1e085d6fe8292a487e626b9bb9c4f35471d96d86833440e52495e606c77d8b"
+    },
+    "posting_scales.f32.bin": {
+      "bytes": 1440,
+      "sha256": "7dd7f0caca878e68a1d7b38be0fd93b52a1f1cc3335964706a2350ffd888b78e"
+    },
+    "posting_vectors.int8.bin": {
+      "bytes": 138240,
+      "sha256": "19745cd7fa3f98e6d493e29100367eb5809b84508b08b37b3fd58b681f14196d"
+    },
+    "postings.jsonl": {
+      "bytes": 3300427,
+      "sha256": "bebf34d84d6b0e42fc0219df48825adcf05dcff3eabc6d73ae81f6c0d449c8bc"
+    },
+    "quality.json": {
+      "bytes": 835,
+      "sha256": "382eeefca7d5a7614f509912633b61ceda4d5dc4f238571c249f407d7fc578c5"
+    },
+    "scales.f32.bin": {
+      "bytes": 8112,
+      "sha256": "8ef2acfc195dff7bb62e7bdd1145fe373ca41fafe2802e58ec349a3c44f77adb"
+    },
+    "schema/chunks.schema.json": {
+      "bytes": 759,
+      "sha256": "d3c5a25fed29d0ec495a9f8609b159f9da6c846b092f8c033b3b0cf97ce2cfd8"
+    },
+    "schema/index.schema.json": {
+      "bytes": 2645,
+      "sha256": "eedd1af9286385895590e8568799eeb16e8d381c1e15028075766b7fe3819eb2"
+    },
+    "schema/manifest.schema.json": {
+      "bytes": 2691,
+      "sha256": "8a687b6b81dfddfbd95fd2197a4b1f197b4fdd9df8f25808c04df8a06afa6d65"
+    },
+    "schema/postings.schema.json": {
+      "bytes": 5895,
+      "sha256": "bada6e3007890900fc1b4532658ea595e04d66f7db59da1bc54c69036807496f"
+    },
+    "vectors.int8.bin": {
+      "bytes": 778752,
+      "sha256": "99534af4c3b6816299661aff9b509686fdc312ff44c0b7bd85ca8f0801934e2d"
+    }
+  },
+  "lexical": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "tokenizer": "v1"
+  },
+  "posting_embedding": {
+    "dtype": "int8",
+    "fallback": "all_chunks",
+    "method": "mean",
+    "normalized": true,
+    "quantization": "per_row_symmetric",
+    "sections": [
+      "duties",
+      "qualifications"
+    ]
+  },
+  "schema_version": "1.3.0",
+  "source": {
+    "api": "usajobs",
+    "as_of": "2026-11-28",
+    "series": [
+      "2210"
+    ],
+    "snapshot": "2026-11-28",
+    "status": "open"
+  }
+}
